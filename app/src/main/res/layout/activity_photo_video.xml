@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context=".phvedio.PhotoVideoActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorMain">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/wdzp"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_photo_download"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_photo_bianji"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:src="@drawable/download_white" />
+
+        <ImageView
+            android:id="@+id/iv_photo_bianji"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+           android:padding="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ic_photo_bianji" />
+
+        <TextView
+            android:id="@+id/tv_photo_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/color_white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_photo_select"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:paddingRight="15dp"-->
+            <!--android:text="@string/choice"-->
+            <!--android:textColor="@color/color_white"-->
+            <!--android:textSize="15sp"-->
+            <!--android:visibility="gone" />-->
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_action_bar"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtn_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/margin"
+            android:paddingTop="@dimen/margin"
+            android:text="@string/photo"
+            android:textColor="@drawable/textcolor_photo_selector"
+            android:textSize="@dimen/textSizeMain" />
+
+        <RadioButton
+            android:id="@+id/rbtn_video"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/margin"
+            android:paddingTop="@dimen/margin"
+            android:text="@string/sp"
+            android:textColor="@drawable/textcolor_photo_selector"
+            android:textSize="@dimen/textSizeMain" />
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_photo_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rg_photo"
+        android:layout_above="@+id/buttomlayout"
+        ></FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:id="@+id/ll_bottom_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_gray"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_tan_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="@string/share"
+                android:textColor="@color/colorMain"/>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorLineSep"/>
+
+
+            <TextView
+                android:id="@+id/tv_tan_delete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                style="@style/textViewMainStyle"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="@string/delete"
+                android:textColor="@color/colorMain"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_tan_xiazai"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_gray"
+            style="@style/textViewMainStyle"
+            android:gravity="center"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/beginDownLoad"
+            android:textColor="@color/colorMain" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

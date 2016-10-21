@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color android:layout_height="wrap_content" android:id="@+id/color1" android:layout_width="wrap_content" name="menu_deep_white">#ffffff</color>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    //
+    <color name="color_white">#ffffff</color>
+    <color name="color_gray">#f0f0f0</color>
+    <color name="color_grayy">#d0d0d0</color>
+    <!--<color name="colorMain">#00adef</color>-->
+    <color name="colorMain">#397dec</color>
+     <color name="color_deep_blue">#5851ff</color>
+     <color name="color_green_deep">#5B774E</color>
+      <color name="color_greennn">#ff00cc00</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="color_deep_gray">#909090</color>
+    <color name="color_text_gray">#535353</color>
+    <color name="color_gps">#f3f3f3</color>
+    <color name="color_bank">#000000</color>
+    <color name="page_back">#fff2f2f2</color>
+    <color name="logo_text_color">#ff7f7f7f</color>
+    <color name="white">#ffffffff</color>
+    <color name="login_with_other_plat_text_color">#ff383838</color>
+    <color name="dialog_white_bg">#fbfbfb</color>
+    <color name="colorBackgroud">#eeeeee</color>
+
+    <color name="trans">#00000000</color>
+    <color name="black_trans">#bb000000</color>
+
+
+    <color name="colorForBtnLogin">#397dec</color>
+
+
+    <color name="colorBtnDisable">#a5a4a4</color>
+    <color name="textColorMain">#333333</color>
+    <color name="textColorSub">#999999</color>
+    <color name="textColorMain2">#4c4c4c</color>
+    <color name="colorLineSep">#cccccc</color>
+    <color name="colorRed">#F8364B</color>
+
+    <color name="backgroundAlpha">#00000000</color>
+
+
+    <!--更换头像弹出框-->
+    <color name="popup_main_background">#b0000000</color>
+    <!--窗口背景颜色-->
+    <color name="bgColor_alertview_alert">#f8f8f8</color>
+    <!--点击颜色-->
+    <color name="bgColor_alert_button_press">#EAEAEA</color>
+    <!--actionsheet模式的取消按钮背景颜色-->
+    <color name="bgColor_actionsheet_cancel_nor">#ffffff</color>
+
+</resources>

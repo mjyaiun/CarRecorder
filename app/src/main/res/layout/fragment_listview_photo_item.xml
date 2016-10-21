@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <RelativeLayout
+        android:id="@+id/more_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin">
+
+        <TextView
+            android:id="@+id/tv_fragment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textViewMainStyle"
+            android:layout_centerVertical="true"
+            android:text="2015-10-25 15:30"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_person_more" />
+    </RelativeLayout>
+
+
+    <com.mitu.carrecorder.view.NoScrollGridView
+        android:id="@+id/listview_item_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:columnWidth="50dp"
+        android:gravity="center"
+        android:horizontalSpacing="5dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:padding="5dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"></com.mitu.carrecorder.view.NoScrollGridView>
+
+</LinearLayout>

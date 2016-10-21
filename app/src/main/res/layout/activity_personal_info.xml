@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:orientation="vertical"
+    tools:context=".my.PersonalInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/color_gray"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_photo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:failureImage="@drawable/defaultheader"
+            fresco:roundAsCircle="true"
+            fresco:roundedCornerRadius="5dp"
+            fresco:roundingBorderColor="@color/colorMain"
+            fresco:roundingBorderWidth="1dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:paddingLeft="55dp"
+            android:src="@drawable/lansebiaojiicon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_setphon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/color_white"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textViewMainStyle"
+            android:layout_centerVertical="true"
+            android:text="@string/zh" />
+
+        <TextView
+            android:id="@+id/tvnick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/iv"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_person_more" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLineSep"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_setmima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+        <TextView
+            android:id="@+id/tvmima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textViewMainStyle"
+            android:layout_centerVertical="true"
+            android:text="@string/modifyPwd" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_person_more" />
+    </RelativeLayout>
+
+</LinearLayout>

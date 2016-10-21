@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:orientation="vertical"
+    tools:context="com.mitu.carrecorder.set.ModifyWifiPwdActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/color_white"
+        android:padding="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/textViewMainStyle"
+            android:text="@string/newWifiPwd"/>
+        <EditText
+            android:id="@+id/pwd_etv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/editTextStyle"
+            android:layout_weight="2"
+            android:hint="@string/inputNewPwd"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLineSep"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:padding="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/textViewMainStyle"
+            android:text="@string/newWifiPwdAgain"/>
+        <EditText
+            android:id="@+id/pwd_again_etv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/editTextStyle"
+            android:layout_weight="2"
+            android:hint="@string/inputNewPwd"/>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/save_pwd_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_90"
+        style="@style/myMainButtonStyle"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="@string/save"/>
+
+</LinearLayout>

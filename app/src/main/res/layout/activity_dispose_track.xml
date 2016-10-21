@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    tools:context=".tracking.DisposeTrackActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_dispose_faqi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padingLeft"
+        android:layout_marginRight="@dimen/padingLeft"
+        android:layout_below="@id/rl_action_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/maxMargin"
+        android:background="@drawable/textview_gb_draw_gray"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/tv_dispose_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="赵钱孙"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_dispose_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="15888888888"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_dispose_faqi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/sqgcd"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_register"
+        android:layout_marginTop="@dimen/margin_90"
+        android:padding="@dimen/padingLeft"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_disope_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/myMainButtonStyle"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/refuse"/>
+
+        <Button
+            android:id="@+id/btn_dispose_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/myMainButtonStyle"
+            android:text="@string/accept"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

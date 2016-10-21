@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/left_menu_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_menu_avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                fresco:actualImageScaleType="fitXY"
+                fresco:failureImage="@drawable/defaultheader"
+                fresco:roundAsCircle="true"
+                fresco:roundedCornerRadius="5dp"
+                fresco:roundingBorderColor="@color/colorMain"
+                fresco:roundingBorderWidth="1dp" />
+
+            <TextView
+                android:id="@+id/menu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/iv_menu_avatar"
+                android:text="15839475888"
+                android:textColor="@color/menu_deep_white"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/menu_name"
+                android:layout_below="@id/menu_name"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/totalTrip"
+                    style="@style/textViewSubStyle"
+                    android:textColor="@color/color_white"/>
+
+                <TextView
+                    android:id="@+id/tv_menu_totalMileage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textViewSubStyle"
+                    android:text="88888km"
+                    android:textColor="@color/color_greennn"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.mitu.carrecorder.view.MyListView
+            android:id="@+id/menu_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padingLeft"
+            android:background="@color/backgroundAlpha"
+            android:divider="@null"
+            style="@style/listViewStyle">
+
+        </com.mitu.carrecorder.view.MyListView>
+
+        <!--<RadioGroup
+            android:id="@+id/menu_gr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/rb_grapher"
+                style="@style/menu_sytle"
+                android:button="@null"
+                android:drawableLeft="@drawable/ic_menu_lilu"
+                android:text="@string/wdgj" />
+
+            &lt;!&ndash;      <RadioButton
+                  android:id="@+id/rb_mileage"
+                  style="@style/menu_sytle"
+                  android:button="@null"
+                  android:drawableLeft="@drawable/ic_menu_lichen"
+                  android:text="@string/clzt" />
+            <RadioButton
+                  android:id="@+id/rb_obd"
+                  style="@style/menu_sytle"
+                  android:button="@null"
+                  android:drawableLeft="@drawable/obd_icon"
+                  android:text="@string/obdjc" />&ndash;&gt;
+            <RadioButton
+                android:id="@+id/rb_chaxun"
+                style="@style/menu_sytle"
+                android:button="@null"
+                android:drawableLeft="@drawable/weizhangchaxun"
+                android:text="@string/trafficIllegalQuery" />
+
+            <RadioButton
+                android:id="@+id/rb_setting"
+                style="@style/menu_sytle"
+                android:button="@null"
+                android:drawableLeft="@drawable/ic_menu_shezi"
+                android:text="@string/setting" />
+
+            <RadioButton
+                android:id="@+id/rb_about"
+                style="@style/menu_sytle"
+                android:button="@null"
+                android:drawableLeft="@drawable/ic_menu_guanyu"
+                android:text="@string/Abou" />
+
+            <RadioButton
+                android:id="@+id/rb_feedback"
+                style="@style/menu_sytle"
+                android:button="@null"
+                android:drawableLeft="@drawable/ic_menu_fankui"
+                android:text="@string/feedback" />
+
+            <RadioButton
+                android:id="@+id/rb_serve"
+                style="@style/menu_sytle"
+                android:button="@null"
+                android:drawableLeft="@drawable/ic_menu_fuwu"
+                android:text="@string/service" />
+        </RadioGroup>-->
+
+
+    </LinearLayout>
+
+</ScrollView>

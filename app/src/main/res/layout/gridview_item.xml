@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+    <!--<TextView-->
+        <!--android:id="@+id/file_path_tv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+
+    <!--<com.mitu.carrecorder.view.MyImageView-->
+        <!--android:id="@+id/iv_gridview_item"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="110dp"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:src="@drawable/a"-->
+        <!--/>-->
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_gridview_item"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_centerInParent="true"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:failureImage="@drawable/default_bigmap"/>
+    <!--   <CheckBox 
+        android:id="@+id/chb_gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:drawableLeft="@drawable/"
+        /> -->
+    <ImageView
+        android:id="@+id/iv_gridview_gouxuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/iv_gridview_item"
+        android:padding="8dp"
+        android:src="@drawable/zhaopianxuanzhong" />
+</RelativeLayout>

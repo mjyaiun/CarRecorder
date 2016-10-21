@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackgroud"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/buttonTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:gravity="center"
+            android:text="@string/takePhoto"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/colorOrgage"
+            android:background="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/buttonPhotoAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:gravity="center"
+            android:text="@string/photoAlbum"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/colorBule"
+            android:background="@color/colorWhite"/>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorBule"
+        android:background="@color/colorWhite"/>
+
+</LinearLayout>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@null"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/loAlertHeader"
+        android:background="@drawable/bg_actionsheet_header"
+        android:layout_weight="1.0"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/buttonTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_actionsheet_title"
+            android:gravity="center"
+            android:textColor="@color/textColorMain2"
+            android:text="@string/takePhoto"
+            android:textSize="@dimen/textSize_actionsheet_title" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLineSep"/>
+
+        <TextView
+            android:id="@+id/buttonPhotoAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_actionsheet_title"
+            android:gravity="center"
+            android:text="@string/photoAlbum"
+            android:textColor="@color/textColorMain2"
+            android:textSize="@dimen/textSize_actionsheet_msg" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/buttonCancel"
+        android:layout_marginTop="@dimen/margin_actionsheet_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_alert_button"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@drawable/bg_actionsheet_cancel"
+        android:text="@string/cancel"
+        android:textColor="@color/colorMain"
+        android:textStyle="bold"
+        android:textSize="@dimen/textSize_actionsheet_msg" />
+</LinearLayout>

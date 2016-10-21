@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Commands>
+
+    <Command>
+        <Name>锁车自动折叠后视镜</Name>
+        <CommandID>1</CommandID>
+    </Command>
+
+    <Command>
+        <Name>一键自动升窗</Name>
+        <CommandID>2</CommandID>
+    </Command>
+
+    <Command>
+        <Name>雾灯随动转向照明</Name>
+        <CommandID>4</CommandID>
+    </Command>
+
+    <Command>
+        <Name>自动转向灯</Name>
+        <CommandID>5</CommandID>
+    </Command>
+
+    <Command>
+        <Name>发动机未熄火提醒</Name>
+        <CommandID>7</CommandID>
+    </Command>
+</Commands>

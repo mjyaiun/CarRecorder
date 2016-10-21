@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".obd.ConnectOBDActivity" >
+
+     <ImageView
+  		android:id="@+id/obd_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/obdjiemiantu" />
+
+     <TextView
+         android:id="@+id/obd_tv"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         style="@style/textViewMainStyle"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="@dimen/mmaxMargin"
+         android:text="@string/onConnecting" />
+
+</RelativeLayout>

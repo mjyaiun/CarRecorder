@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".phvedio.BigPictureActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            fresco:actualImageScaleType="fitCenter"
+            fresco:failureImage="@drawable/default_bigmap"/>
+    </LinearLayout>
+
+
+
+
+
+    <com.mitu.carrecorder.view.LocalMyHorizontalScrollView
+        android:id="@+id/id_local_horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/id_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </com.mitu.carrecorder.view.LocalMyHorizontalScrollView>
+</LinearLayout>

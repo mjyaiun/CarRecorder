@@ -1,0 +1,8 @@
+
+jnilibs armeabi-v7a 
+vlc相关库  libiomx-gingerbread.so，libiomx-hc.so，libiomx-ics.so，libvlcjni.so
+
+
+
+
+6.21  界面细节优化，游客可浏览，需要连接设备的界面判断连接

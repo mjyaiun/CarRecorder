@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity">
+
+
+    <EditText
+        android:id="@+id/et_register_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_90"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        style="@style/editTextStyle"
+        android:background="@drawable/textview_gb_draw_gray"
+        android:maxLength="20"
+        android:hint="@string/inputPhoneNumber"
+        android:inputType="phone"
+        android:padding="@dimen/activity_horizontal_margin"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_register_sms"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            style="@style/editTextStyle"
+            android:inputType="number"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:background="@drawable/textview_gb_draw_gray"
+            android:hint="@string/inputCheckCode"/>
+
+        <Button
+            android:id="@+id/tv_register_sms"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            style="@style/myMainButtonStyle"
+            android:layout_marginLeft="@dimen/margin"
+            android:text="@string/getCheckCode"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textViewSubStyle"
+            android:textColor="@color/textColorMain2"
+            android:text="@string/checkCodeWornForRegiste"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chb_register_agree"
+            style="@style/checkBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padingLeft"
+            android:checked="true"
+            android:text="@string/meAgree"
+            android:textColor="@color/color_deep_gray"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/tv_register_protocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registerProtrcol"
+            android:textColor="@color/colorMain" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        style="@style/myMainButtonStyle"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/register" />
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_resetpss"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <LinearLayout
+        android:id="@+id/ll_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_90"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padingLeft"
+            android:layout_marginRight="@dimen/padingLeft"
+            android:background="@drawable/textview_gb_draw_gray"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mima" />
+
+            <EditText
+                android:id="@+id/et_newPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:background="@null"
+                android:hint="@string/setPwd"
+                android:inputType="textPassword"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/edittext_textsize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padingLeft"
+            android:layout_marginRight="@dimen/padingLeft"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/textview_gb_draw_gray"
+            android:padding="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:id="@+id/iv_forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mima" />
+
+            <EditText
+                android:id="@+id/et_password_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@id/iv_forget"
+                android:background="@null"
+                android:hint="@string/inputPwdAgain"
+                android:inputType="textPassword"
+                android:textColor="@color/color_text_gray"
+                android:textSize="@dimen/textSize" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_reset_complet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_reset"
+            android:layout_marginLeft="@dimen/padingLeft"
+            android:layout_marginRight="@dimen/padingLeft"
+            style="@style/myMainButtonStyle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_90"
+            android:text="@string/save"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

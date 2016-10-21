@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:orientation="vertical"
+    tools:context=".my.MessageActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_my_xtmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/xitongmessage" />
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="44dp"
+                android:src="@drawable/reddian" />
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_ximessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textViewMainStyle"
+            android:layout_marginLeft="55dp"
+            android:text="@string/systemMessage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ximessage"
+            style="@style/textViewSubStyle"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="@dimen/margin"
+            android:text="系统消息,系统消息,系统消息,系统消息" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLineSep"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_gcmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="2dp"
+            android:src="@drawable/gcmessage" />
+
+
+        <TextView
+            android:id="@+id/tv_flow_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textViewMainStyle"
+            android:layout_marginLeft="55dp"
+            android:text="@string/followMessage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_flow_message"
+            style="@style/textViewSubStyle"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="@dimen/margin"
+            android:text="跟车消息。。。。。"/>
+
+    </RelativeLayout>
+</LinearLayout>

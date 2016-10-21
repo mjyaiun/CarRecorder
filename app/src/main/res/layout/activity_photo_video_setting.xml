@@ -1,0 +1,29 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".set.LightSourceFrequenceSettingActivity"
+    android:background="@color/color_gray">
+
+
+    <ListView
+        android:id="@+id/photo_video_setting_lv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/listViewStyle">
+    </ListView>
+
+    <ListView
+        android:id="@+id/photo_video_setting_lv_2"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/listViewStyle">
+    </ListView>
+  
+
+           
+</LinearLayout>
+

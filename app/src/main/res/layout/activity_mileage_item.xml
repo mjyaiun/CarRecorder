@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/tv_mileage_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        style="@style/textViewMainStyle"
+        android:text="2015-11-02"/>
+
+    <TextView
+        android:id="@+id/tv_mileage_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textViewMainStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/horMargin"
+        android:text="20"/>
+
+    <TextView
+        android:id="@+id/tv_mileage_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        style="@style/textViewMainStyle"
+        android:layout_toRightOf="@+id/tv_mileage_distance"
+        android:text="KM" />
+
+    <ImageView
+        android:id="@+id/iv_mileage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@drawable/ic_person_more" />
+
+</RelativeLayout>

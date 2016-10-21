@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_gridview_item"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_centerInParent="true"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:failureImage="@drawable/default_bigmap"/>
+
+    <ImageView
+        android:id="@+id/iv_gridview_gouxuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/iv_gridview_item"
+        android:padding="8dp"
+        android:src="@drawable/zhaopianxuanzhong" />
+
+
+    <com.mitu.carrecorder.view.MyProgressBar
+        android:id="@+id/gridview_download_progressbar"
+        style="@style/ProgressBar_Mini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:progress="100"
+        android:visibility="gone"/>
+
+</RelativeLayout>

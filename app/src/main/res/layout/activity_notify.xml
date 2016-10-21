@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".set.NotifyActivity" >
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+        />
+  <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        >
+       <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:background="@color/color_gray"
+           android:paddingLeft="@dimen/activity_horizontal_margin"
+           android:paddingRight="@dimen/activity_horizontal_margin"
+           android:gravity="center_vertical"
+           >
+           <TextView 
+               android:id="@+id/tv_height_cancel"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               style="@style/textViewMainStyle"
+               android:text="@string/cancel"
+               android:layout_centerVertical="true"
+               />
+            <TextView 
+              android:layout_centerHorizontal="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/time"
+                style="@style/textViewMainStyle"
+               android:layout_centerVertical="true"
+               />
+           <TextView
+                android:id="@+id/tv_height_submit"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/complate"
+               style="@style/textViewMainStyle"
+               android:textColor="@color/color_greennn"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               />
+       </RelativeLayout>
+       
+
+       <LinearLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+           
+             
+      
+        <com.mitu.carrecorder.view.CycleWheelView
+             android:id="@+id/hour"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />  
+            
+       <com.mitu.carrecorder.view.CycleWheelView
+             android:id="@+id/fenhao"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+         
+         <com.mitu.carrecorder.view.CycleWheelView
+              android:id="@+id/minite"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+  
+    </LinearLayout>
+
+</LinearLayout>

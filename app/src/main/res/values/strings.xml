@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UD WIN</string>
+    
+    <!--登陆页面-->
+    <string name="inputPhoneNumber">请输入手机号码</string>
+    <string name="inputPwd">请输入密码</string>
+    <string name="jzmm">  记住密码</string>
+    <string name="forgetPwd">忘记密码？</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="otherLogin">第三方登录</string>
+    <string name="checkNetWorkAndTry">请检查网络设置或稍后再试！</string>
+    <string name="sendAgain">重新发送</string>
+    <string name="onLogining">正在登陆...</string>
+
+
+    <!--首页-->
+    <string name="carRecorder">行车记录仪</string>
+    <string name="needToChangeWifiConnected">需要断开设备wifi热点进行网络连接，确定要切换吗？</string>
+    <string name="openInternet">没有连接网络，要打开吗？</string>
+
+    <!--注册-->
+    <string name="inputCheckCode">请输入短信验证码</string>
+    <string name="getCheckCode">获取验证码</string>
+    <string name="meAgree">我同意</string>
+    <string name="registerProtrcol">《注册协议》</string>
+    <string name="secondGetAgain">秒后重新获取</string>
+    <string name="phoneInputError">手机号码有误，请重新输入</string>
+    <string name="registeSuccess">注册成功！</string>
+    <string name="onDoingRegiste">正在注册...</string>
+    <string name="onLoading">正在加载...</string>
+    <string name="checkCodeWornForRegiste">*请在60秒内完成验证，超时请点击重新发送</string>
+    <string name="agreeProtcol">请您同意注册协议！</string>
+
+
+    <!--修改密码/设置密码-->
+    <string name="resetPwd">重置密码</string>
+    <string name="inputOldPwd">请输入原密码！</string>
+    <string name="newPwdNotAllowEmpty">新密码不能为空！</string>
+    <string name="setPwd">设置密码</string>
+    <string name="modifyPwd">修改密码</string>
+    <string name="inputPwdAgain">请再次输入密码</string>
+    <string name="oldPwdNotCorrect">原密码输入不正确！</string>
+    <string name="pwdNotAllowEmpty">密码不能为空，请输入密码！</string>
+    <string name="pwdNotStandard">密码输入不符合规范，请输入6到16位字符！</string>
+    <string name="twiceNotSame">两次密码输入不一致</string>
+    <string name="onSaving">正在保存...</string>
+    <string name="onSubmit">正在提交...</string>
+    <string name="onUpload">正在上传...</string>
+    <string name="saveModify">保存修改</string>
+    <string name="submit">提交</string>
+
+    <string name="tourist">游客</string>
+
+
+    <!--修改个人信息-->
+    <string name="modifySuccess">恭喜您修改成功！</string>
+    <string name="submitSuccess">恭喜您提交成功！</string>
+    <string name="modifyFailed">修改失败</string>
+
+    <!--修改昵称-->
+    <string name="nickname">昵称</string>
+    <!--<string name="">昵称不能为空！</string>-->
+    <string name="modifyNickName">修改昵称</string>
+    <string name="inputNickName">请输入昵称</string>
+    <string name="nickNameStander">可由中文、英文和数字组成</string>
+    <string name="nickNameNotAllowEmpty">昵称不允许为空</string>
+    <string name="inputStanderNickName">请输入有效昵称</string>
+
+
+    <!--设置-->
+    <string name="setting">设置</string>
+    <string name="photoVideoSetting">照片/视频设置</string>
+    <string name="lightSourceFrequency">光源频率</string>
+    <string name="videoResolution">录影分辨率</string>
+    <string name="obdSetting">车辆功能设置</string>
+    <string name="exposureCompensation">曝光补偿</string>
+    <string name="tvStyle">TV制式</string>
+    <string name="loopVideo">循环录影</string>
+    <string name="seniorSetting">高级设置</string>
+    <string name="carStopMonitor">停车监控</string>
+    <string name="Gsensor">Gsensor</string>
+    <string name="functionInfo">功能信息</string>
+    <string name="date">日期</string>
+
+    <!--语言设置-->
+    <string name="language">语言</string>
+
+    <!--存储管理-->
+    <string name="storageManage">存储管理</string>
+
+
+    <!--时间设定-->
+    <string name="timeSetting">时间设定</string>
+    <string name="recorderSetting">记录仪设置</string>
+
+    <!--wifi设置-->
+    <string name="wifiName">WIFI名称</string>
+    <string name="inputWifiName">请输入WIFI名称</string>
+    <string name="save">保存</string>
+    <string name="nameInputEmpty">输入的wifi名称不能为空</string>
+    <string name="newWifiPwd">新密码：</string>
+    <string name="newWifiPwdAgain">确认密码：</string>
+    <string name="inputNewPwd">请输入新密码</string>
+    <string name="modifyWifiName">修改WIFI名称</string>
+    <string name="modifyWifiPwd">修改WIFI密码</string>
+    <string name="notConnectedToDeviceWifi">未连接设备WiFi，是否连接设备WiFi？</string>
+    <string name="wifiNotOpen">wifi没有打开，是否要打开？</string>
+    <string name="needDisconnectDeviceWifi">需要切换网络，要切换吗？</string>
+
+
+
+    <!--账户信息-->
+    <string name="accountInfo">账户信息</string>
+    <string name="totalMemory">总内存</string>
+    <string name="surplusMemory">剩余内存</string>
+    <string name="number">编号</string>
+    <string name="modelNumber">型号</string>
+
+    <!--拍照分辨率-->
+    <string name="takePhoteResolution">拍照分辨率</string>
+
+    <!--设备列表-->
+    <string name="deviceSureToDelete">确定删除设备吗？</string>
+    <string name="deviceList">设备列表</string>
+    <string name="cancel">取消</string>
+    <string name="prompt">提示</string>
+    <string name="confirm">确定</string>
+    <string name="searchNoDevice">当前没有搜索到任何设备！</string>
+    <string name="refresh">刷新</string>
+    <string name="playFailed">实时视频播放失败！</string>
+    <string name="onCapture">正在拍照请稍等...</string>
+    <string name="captureSuccess">拍照成功</string>
+
+
+    <!--视频播放页面-->
+    <string name="pleaseStopMovieRecord">请先停止录像！</string>
+    <string name="onRequestMovieRecord">正在请求开始录像...</string>
+    <string name="onRequestMovieRecordStop">正在请求停止录像...</string>
+    <string name="opFailed">操作失败</string>
+    <string name="noFreeSpace">剩余空间不足，无法拍照！</string>
+    <string name="takePhotoFailed">拍照失败！</string>
+
+
+
+
+    <!--绑定记录仪/wifi-->
+    <string name="notConnectDeviceWifi">未连接到行车记录仪wifi热点</string>
+    <string name="connectYourRecorder">连接您的行车记录仪....</string>
+    <string name="onBlindDevice">连接您的行车记录仪...</string>
+    <string name="blindRecorder">绑定行车记录仪</string>
+    <string name="notUsableWifi">当前没有可用的wifi!</string>
+    <string name="sureToOpenWifi">您的wifi功能暂未打开，确定要打开吗？</string>
+    <string name="onConnecting">正在连接...</string>
+    <string name="wifi">WIFI</string>
+    <string name="chooseWIFI">选择WIFI</string>
+    <string name="saveToReConnectedDevice">保存后摄像需要重新连接摄像机，是否要保存？</string>
+
+
+    <!--我的信息-->
+    <string name="loginOut">退出登录</string>
+    <string name="takePhoto">拍照</string>
+    <string name="photoAlbum">从相册中选择</string>
+    <string name="youNotChoosePhoto">您没有选择图片！</string>
+    <string name="sureToLoginOut">确定要退出吗？</string>
+
+    <!--分享-->
+    <string name="shareSuccess">分享成功</string>
+    <string name="shareFaild">分享失败</string>
+
+    <!--意见反馈-->
+    <string name="backContentNotAllowEmpty">意见不能为空！</string>
+    <string name="notLogin">没有登陆</string>
+    <string name="feedbackSuccess">意见反馈成功！</string>
+    <string name="feedbackFailed">意见提交失败！</string>
+
+    <!--OBD-->
+    <string name="connectObdSystem">连接OBD系统</string>
+    <string name="obdSystemCheck">OBD系统检测</string>
+    <string name="carState">车辆状态</string>
+    <string name="theFunctionForExpect">此功能敬请期待！</string>
+
+    <!--我的轨迹-->
+    <string name="orbit">轨迹</string>
+    <string name="carOrbit">车辆轨迹</string>
+    <string name="totalTrip">累计行程:</string>
+    <string name="myMileage">我的里程</string>
+
+
+    <!--照片/视频-->
+    <string name="photo">照片</string>
+    <string name="delete">删除</string>
+    <string name="share">分享</string>
+    <string name="beginDownLoad">开始下载</string>
+    <string name="loadFailed">加载失败</string>
+    <string name="download">下载</string>
+    <string name="alreadyChoose">已选择%1$d张照片</string>
+    <string name="myPhoto">我的照片</string>
+    <string name="myVideo">我的视频</string>
+    <string name="preview">预览</string>
+    <string name="onDelete">删除中...</string>
+    <string name="deleteSuccess">删除成功</string>
+    <string name="deleteFailed">删除失败</string>
+    <string name="fileNoThumbNailTryDownload">该文件没有预览文件，请下载后播放！</string>
+
+
+    <!--跟车-->
+    <string name="refuse">拒绝</string>
+    <string name="accept">接收</string>
+    <string name="time">时间</string>
+    <string name="complate">完成</string>
+
+
+    <!--违章-->
+    <string name="trafficIllegalQuery">违章查询</string>
+    <string name="query">查询</string>
+    <string name="applyFollowCar">申请跟车</string>
+
+
+    <!--消息-->
+    <string name="message">消息</string>
+    <string name="systemMessage">系统消息</string>
+    <string name="followMessage">跟车消息</string>
+
+
+    <!--关于我们-->
+    <string name="aboutUs">关于我们</string>
+    <string name="about">关于</string>
+
+    //
+
+
+    <string name="qsryzm">请输入验证码</string>
+
+    <string name="sfwzxbb">是否为最新版本？</string>
+
+
+    <string name="fwtk">服务条款</string>
+
+
+    <string name="yzmcw">验证码错误</string>
+
+
+    <string name="yzmfscg">验证码发送成功！</string>
+    <string name="zayc">再按一次退出程序！</string>
+
+    <string name="fssb">发送失败，请检查网络设置或稍后再试！！</string>
+
+
+    <string name="scsb">上传失败！</string>
+
+    <string name="About">关于我们的介绍</string>
+    <string name="sysj">剩余时间(</string>
+    <string name="version">版本号</string>
+
+    <string name="feedback">用户反馈</string>
+    <string name="zhmm">找回密码</string>
+    <string name="service">服务条款</string>
+
+    <string name="choice">选择</string>
+
+    <string name="skip">跳过</string>
+    <string name="start">立即开启</string>
+    <string name="yync">已用内存</string>
+    <string name="hsnc">还剩内存</string>
+    <string name="zyl">总容量</string>
+    <string name="ylkykj">预留可用空间</string>
+    <string name="if1">如果剩余存储空间小于预留可用空间,本程序不再下载</string>
+    <string name="dqzp">当前照片:</string>
+    <string name="nczy">内存占用:</string>
+    <string name="yjkc">预计可存:</string>
+    <string name="dqsp">当前视频:</string>
+
+
+    <string name="qsrn">请输入您的意见...</string>
+
+    <string name="qsmm">请输入手机号码(11位)</string>
+
+
+    <string name="next">下一步</string>
+    <string name="pgbc">曝光补偿</string>
+    <string name="tvzs">TV制式</string>
+    <string name="gypl">光源频率</string>
+    <string name="tcjk">停车监控</string>
+    <string name="pzfbl">拍照分辨率</string>
+    <string name="lyfbl">录影分辨率</string>
+    <string name="xhly">循环录影</string>
+    <string name="jlct">距离车头:</string>
+    <string name="yfz">一分钟</string>
+    <string name="lyyd">录影移动侦测</string>
+    <string name="lyyp">录影音频</string>
+    <string name="lysy">录影水印</string>
+
+    <string name="wdgj">我的轨迹</string>
+
+    <string name="obdjc">OBD检测</string>
+
+
+    <string name="zcxsj">总出行时间 :</string>
+    <string name="zcxlc">总出行里程 :</string>
+    <string name="pjsd">平 均 速 度  :</string>
+    <string name="czxx">车主信息</string>
+    <string name="whjgj">武汉交管局</string>
+    <string name="cx">车    型:</string>
+    <string name="ys">颜 色:</string>
+    <string name="cjrq">车检日期:</string>
+    <string name="wzxxrx">违章信息如下</string>
+    <string name="ljwz">累计违章:</string>
+    <string name="ljfk">累计罚款:</string>
+    <string name="ljkf">累计扣分:</string>
+    <string name="fks">罚款数:</string>
+    <string name="kf">扣分:</string>
+
+
+    <string name="grxx">个人信息</string>
+    <string name="bj">编辑</string>
+
+
+    <string name="wdzpsp">我的照片/视频</string>
+
+    <string name="zh">账号</string>
+
+
+    <string name="tyjc">胎压检测</string>
+    <string name="zdsc">自动升窗</string>
+    <string name="zdzdh">自动折叠后视镜</string>
+    <string name="zddd">自动大灯</string>
+    <string name="zdzxd">自动转向灯</string>
+    <string name="wdzp">我的照片</string>
+    <string name="sp">视频</string>
+
+
+    <string name="qkwlyy">晴空万里艳阳站</string>
+
+
+    <string name="hourr">24小时制</string>
+    <string name="zdsz">自动设置</string>
+    <string name="szrq">设置日期</string>
+    <string name="szsj">设置时间</string>
+    <string name="gnxx">功能信息</string>
+    <string name="hot">WIFI热点</string>
+    <string name="sjsd">时间设定</string>
+    <string name="zhxx">账户信息</string>
+    <string name="yy">语言</string>
+    <string name="ccgl">存储管理</string>
+    <string name="gjsz">高级设置</string>
+    <string name="wx">微信</string>
+    <string name="pyq">朋友圈</string>
+    <string name="wb">微博</string>
+    <string name="kj">QQ空间</string>
+    <string name="gb">关闭</string>
+    <string name="d">低</string>
+    <string name="z">中</string>
+    <string name="g">高</string>
+    <string name="sw">上午</string>
+    <string name="xw">下午</string>
+    <string name="lc">路程:</string>
+    <string name="pjs">平均速度:</string>
+    <string name="hs">耗时:</string>
+    <string name="qsrct">请输入车头手机号码(11位)</string>
+    <string name="sqfcjs">申请已发送,等待车头接收...</string>
+    <string name="sqgc">申请跟车</string>
+    <string name="sqgcd">申请跟车...</string>
+    <string name="clgcsq">处理跟车申请</string>
+    <string name="fqgc">发起跟车</string>
+    <string name="wj">文件</string>
+    <string name="fbl">分辨率</string>
+    <string name="ly">录音</string>
+    <string name="lx">录像</string>
+    <string name="zx">照相</string>
+    <string name="qszmc">请设置WiFi名称</string>
+    <string name="wfmm">wifi密码</string>
+    <string name="qszwf">请设置WiFi密码</string>
+    <string name="xzjgj">选择交管局</string>
+    <string name="jgj">交管局</string>
+    <string name="qnsryxx">请您输入以下信息查询违章情况</string>
+    <string name="cph">车牌号:</string>
+    <string name="cjh">车驾号:</string>
+    <string name="qsrcj">请输入车驾号的后5位</string>
+    <string name="qclx">汽车类型:</string>
+    <string name="qxzqcl">请选择汽车类型</string>
+    <string name="fdjlx">发动机类型:</string>
+    <string name="qxzfdjl">请选择发动机类型</string>
+    <string name="qjmm">请输入旧密码</string>
+    <string name="xmm">请输入新密码</string>
+    <string name="zcxmm">请再次输入新密码</string>
+
+    <string name="jxsm">继续扫描</string>
+    <string name="dfjj">对方拒绝了你的申请</string>
+
+</resources>

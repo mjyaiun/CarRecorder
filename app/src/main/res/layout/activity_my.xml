@@ -1,0 +1,306 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:orientation="vertical"
+    tools:context=".my.MineActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_person"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:background="@drawable/my_bg">
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        android:src="@drawable/back" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/grxx"
+                        android:textColor="@color/color_white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/title_manage_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        android:text="@string/bj"
+                        android:textColor="@color/color_white" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="92dp"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:failureImage="@drawable/defaultheader"
+                fresco:roundAsCircle="true"
+                fresco:roundingBorderColor="@color/colorMain"
+                fresco:roundingBorderWidth="1dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_pserson_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textViewMainStyle"
+                android:layout_marginBottom="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:gravity="center"/>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    style="@style/textViewSubStyle"
+                    android:text="@string/totalTrip"/>
+
+                <TextView
+                    android:id="@+id/tv_pserson_dis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textViewSubStyle"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:textColor="@color/colorMain"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/color_white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin">
+
+            <RadioButton
+                android:id="@+id/rb_myweizhang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/leftmenu"
+                android:gravity="center"
+                android:text="@string/trafficIllegalQuery"
+                android:textSize="@dimen/textSize" />
+
+            <RadioButton
+                android:id="@+id/rb_mycarstate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/gerencheliangzhuangtai"
+                android:gravity="center"
+                android:text="@string/carState"
+                android:textSize="@dimen/textSize" />
+
+            <RadioButton
+                android:id="@+id/rb_mycartrak"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/gerencheliangguiji"
+                android:gravity="center"
+                android:text="@string/carOrbit"
+                android:textSize="@dimen/textSize" />
+
+            <RadioButton
+                android:id="@+id/rb_mymessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/gerenxiaoxi"
+                android:gravity="center"
+                android:text="@string/message"
+                android:textSize="@dimen/textSize" />
+
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/rl_my_phv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/menu_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/tupianhui" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                style="@style/textViewMainStyle"
+                android:layout_toRightOf="@+id/menu_img"
+                android:layout_marginLeft="@dimen/margin"
+                android:text="@string/wdzpsp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_person_more" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLineSep"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_my_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/img_setting_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/shezhi" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                style="@style/textViewMainStyle"
+                android:layout_toRightOf="@+id/img_setting_menu"
+                android:layout_marginLeft="@dimen/margin"
+                android:text="@string/setting"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_person_more" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLineSep"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_my_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/menu_aboutus_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/guanyuwomenhui" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                style="@style/textViewMainStyle"
+                android:layout_toRightOf="@+id/menu_aboutus_img"
+                android:layout_marginLeft="@dimen/margin"
+                android:text="@string/about"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_person_more" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/rl_my_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/color_white"
+            android:gravity="center"
+            android:text="@string/loginOut"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/btnTextSize" />
+
+    </LinearLayout>
+
+</ScrollView>

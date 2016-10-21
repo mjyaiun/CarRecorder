@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:background="@color/color_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/list_item_text"
+            android:layout_width="match_parent"
+            style="@style/textViewMainStyle"
+            android:gravity="center_vertical"
+            android:textColor="@color/textColorMain2"
+            android:layout_marginLeft="@dimen/horMargin"
+            android:text="test"/>
+    </LinearLayout>
+
+    <!--<ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_person_more"
+        android:layout_margin="@dimen/margin"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout" />-->
+
+
+    <CheckBox
+        android:id="@+id/togglebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/checkBoxSettingStyle"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+   <!-- <ToggleButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        style="@style/toggleButtonStyle"
+        />-->
+
+</RelativeLayout>

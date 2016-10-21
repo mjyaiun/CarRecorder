@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_resetpss"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".my.ModifyPwdActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maxMargin"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padingLeft"
+            android:layout_marginRight="@dimen/padingLeft"
+            android:layout_marginTop="@dimen/padingLeft"
+            android:background="@drawable/textview_gb_draw_gray"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mima" />
+
+            <EditText
+                android:id="@+id/et_oldPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                style="@style/editTextStyle"
+                android:hint="@string/qjmm"
+                android:inputType="textPassword"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/textview_gb_draw_gray"
+            android:layout_marginLeft="@dimen/padingLeft"
+            android:layout_marginRight="@dimen/padingLeft"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mima" />
+
+            <EditText
+                android:id="@+id/et_new_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                style="@style/editTextStyle"
+                android:hint="@string/xmm"
+                android:inputType="textPassword"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/textview_gb_draw_gray"
+            android:layout_marginLeft="@dimen/padingLeft"
+            android:layout_marginRight="@dimen/padingLeft"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mima" />
+
+            <EditText
+                android:id="@+id/et_password_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                style="@style/editTextStyle"
+                android:hint="@string/zcxmm"
+                android:inputType="textPassword" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reset_complet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padingLeft"
+        android:layout_marginRight="@dimen/padingLeft"
+        android:layout_below="@id/ll_reset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/maxMargin"
+        style="@style/myMainButtonStyle"
+        android:text="@string/saveModify" />
+
+</RelativeLayout>

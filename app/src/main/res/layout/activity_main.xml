@@ -1,0 +1,46 @@
+<com.mitu.carrecorder.view.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/left_menu_bg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <!-- 左侧菜单页面 -->
+
+    <include layout="@layout/activity_leftmenu" />
+
+    <com.mitu.carrecorder.view.MyRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackgroud"
+        android:orientation="vertical" >
+
+        <!-- headbanner -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorMain"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/menu_imgbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:background="@drawable/leftmenu_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/carRecorder"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <include layout="@layout/middleview" />
+    </com.mitu.carrecorder.view.MyRelativeLayout>
+
+</com.mitu.carrecorder.view.DragLayout>
